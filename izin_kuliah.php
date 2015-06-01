@@ -35,7 +35,7 @@
 <body>
 <?php
 	session_start(); // memulai session 
-
+//error_reporting(0);
 	include "config.php";
 	if($_SESSION['level']=='usr02')
 	{		 
@@ -164,8 +164,51 @@
 								$newid=$no.$baru.$tahun;
 								//echo"$newid";
 							}
-					?>							
-               <form method="post" action="izin_kuliah.php">
+							
+							$query2 = "SELECT max(id_surat) as maxID2 FROM surat";
+							$penomoran2 = mysql_query($query2);
+							while ($data2 = mysql_fetch_assoc($penomoran2))
+							{
+							 $id_surat = $data2['maxID2'];							 	
+							}
+							//echo "$id_surat";
+							
+							if($id_surat)
+							{
+							$nourut2=(int)substr($id_surat,14,3);
+							$nourut2++;
+							$baru2='SK-';
+							$jenis='-srt01-';
+							$newid2=$baru2.$tahun.$jenis.sprintf("%03s", $nourut2);
+							//echo "$newid2";
+							}
+							else
+							{
+							
+								$baru2='SK-';
+								$no2='001';
+								$jenis='-srt01-';
+								$newid2=$baru2.$tahun.$jenis.$no;
+								//echo"$newid2";
+							}
+							$hidden1="";
+							$hidden2="hidden='hidden'";
+							$_SESSION[id_surat]="$newid2";
+					?>	
+<?php
+			
+			if(isset($_POST["no_surat"]))
+	{	
+	$no_surat=$_POST["no_surat"];
+	$tgl_surat=$_POST["tgl_surat"];
+	$alasan=$_POST["alasan"];
+		$result= mysql_query("insert into surat (id_surat,id_jenis_surat,id_user,no_surat,tanggal_surat_dibuat,izin_kuliah) VALUES ('$newid2','srt01','1210961003','$newid','$tgl_surat','$alasan')");	  
+		$hidden1="hidden='hidden'";
+		$hidden2="";
+		mysql_close();
+	}
+			?>						
+               <form method="post" action="izin_kuliah.php" <?php echo"$hidden1"; ?>">
 				<div class="row">
 				<div class="col-md-4 col-md-offset-4">				
                 <div class="form-group">
@@ -178,7 +221,7 @@
                 </div>
 				<div class="form-group">
                     <label>Alasan</label>
-                    <input type="text" class="form-control span12" name="alasan" id="alasan" required>
+					<textarea class="form-control span12" name="alasan" rows="5" cols="40" required></textarea>
                 </div>
 								
                 <div class="form-group">
@@ -190,7 +233,66 @@
 </div>
 				 
             </form>
-						
+			
+					<form method="post" action="izin_kuliah.php" <?php echo"$hidden2"; ?>">
+					<h4>Masukkan NIM mahasiswa jika jumlah mahasiswa lebih dari satu orang</h4>
+				<div class="row">
+				<div class="col-md-4 col-md-offset-4">				
+                <div class="form-group">
+                    <label>NIM</label>
+                    <input type="text" class="form-control span12" name="nim" id="nim"  required>
+                </div>
+				<div class="form-group">
+                    <label>Nama</label>
+                    <input type="text" class="form-control span12" name="nama" id="nama"  required>
+                </div>
+               
+								
+                <div class="form-group">
+                     <input type="submit" class="btn btn-primary pull-right" value="Tambah" />
+                   <a href='admin_pengguna_ubah.php?ubah=$baris[id_user]'><button type='submit' class='btn btn-warning'>Selesai</button></a>
+                </div>
+                    <div class="clearfix"></div>
+  </div>
+</div>
+				 
+            </form>
+			<?php
+			
+			$query3 = "SELECT max(id_surat_orang) as maxID3 FROM surat_orang";
+							$penomoran3 = mysql_query($query3);
+							while ($data3 = mysql_fetch_assoc($penomoran3))
+							{
+							 $id_surat_orang = $data3['maxID3'];							 	
+							}
+							//echo "$no_surat";
+							
+							if($id_surat_orang)
+							{
+							$id_surat_orang=(int)substr($id_surat_orang,0,3);
+							$id_surat_orang++;
+							$baru3='MHS-srt-01-';
+							$newid3=$baru3.sprintf("%03s", $id_surat_orang);
+							//echo "$newid";
+							}
+							else
+							{
+								$baru3='MHS-srt-01-';	
+								$no3='001';
+								$newid3=$baru3.$no3;
+								//echo"$newid";
+							}
+			
+			if(isset($_POST["nim"]))
+	{	
+	$nim=$_POST["nim"];
+	$nama=$_POST["nama"];
+		$result= mysql_query("insert into surat_orang (id_surat_orang,id_surat,nim,nama) VALUES ('$newid3','$newid2','$nim','$nama')");	  
+		$hidden1="hidden='hidden'";
+		$hidden2="";
+		mysql_close();
+	}
+			?>		
                 </div>
             
             </div>

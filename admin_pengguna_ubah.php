@@ -227,7 +227,6 @@ echo "<option selected value=$id_hak_akses>$akses</option>";
 		
 		$result= mysql_query("update user set id_user='$nim', nama='$nama', email='$email', status='$status', ttl='$ttl', hp='$hp', id_hak_akses='$id_hak_akses' where id_user='$nim' ");	  
     
-    
 			if(isset($_POST['nim']))
 			{
 				if($result >0)
