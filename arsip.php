@@ -119,6 +119,48 @@
                             </li>
                         </ol>
                     </div>
+					<table class="table table-hover">
+							<thead align="center">
+									 <tr>											
+											<th><center>Nomor</center></th> 
+											<th><center>NIM</center></th>											
+											<th><center>Nama</center></th>										
+											<th><center>Jenis Surat</center></th>
+											<th><center>Nomor Surat</center></th>
+											<th><center>Tanggal Surat</center></th>
+											<th></th>
+									</tr>
+							</thead>
+								<?php
+								error_reporting(0);
+								require_once 'config.php';
+								
+								$nomor=0;
+								$result=  mysql_query("SELECT * FROM jenis_surat left join surat on jenis_surat.id_jenis_surat=surat.id_jenis_surat left join surat_orang on surat.id_surat=surat_orang.id_surat where disetujui='1'");
+									while($baris = mysql_fetch_assoc($result))
+									{
+									$nomor++;
+										echo "
+										<tbody>
+											<tr>
+												<td><center>$nomor</center></td>
+												<td><center>$baris[nim]</center></td>
+												<td><center>$baris[nama]</center></td>
+												<td><center>$baris[jenis]</center></td>
+												<td><center>$baris[no_surat]</center></td>
+												<td><center>$baris[tanggal_surat_dibuat]</center></td>	
+												<td>
+												<a href='pengguna_ubah.php?ubah=$baris[id_user]'><button type='submit' class='btn btn-primary'>Lihat</button></a>
+												 </td>
+												
+											</tr>
+										<tbody>";
+									}
+
+
+								?>
+
+                            </table>
                 </div>
             
             </div>

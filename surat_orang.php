@@ -109,6 +109,7 @@ error_reporting(0);
 						</li>
                         <li>
                         <a href="user_kotak_masuk.php"><i class="fa fa-fw fa-folder-open"></i> Kotak masuk</a>
+
 						</li>
                         
 					</li>
@@ -136,97 +137,97 @@ error_reporting(0);
                             </li>
                         </ol>
                     </div>
-							<div class="container-fluid">			
-					<?php
-						date_default_timezone_get('Asia/Jakarta');
-						$tahun=date("Y");
-							$query = "SELECT max(no_surat) as maxID FROM surat";
-							$penomoran = mysql_query($query);
-							while ($data = mysql_fetch_assoc($penomoran))
-							{
-							 $no_surat = $data['maxID'];							 	
-							}
-							//echo "$no_surat";
-							
-							if($no_surat)
-							{
-							$nourut=(int)substr($no_surat,0,3);
-							$nourut++;
-							$baru='/UN16.15.5.2/PP/';
-							$newid=sprintf("%03s", $nourut).$baru.$tahun;
-							//echo "$newid";
-							}
-							else
-							{
-							
-								$baru='/UN16.15.5.2/PP/';
-								$no='001';
-								$newid=$no.$baru.$tahun;
-								//echo"$newid";
-							}
-							
-							$query2 = "SELECT max(id_surat) as maxID2 FROM surat";
-							$penomoran2 = mysql_query($query2);
-							while ($data2 = mysql_fetch_assoc($penomoran2))
-							{
-							 $id_surat = $data2['maxID2'];							 	
-							}
-							//echo "$id_surat";
-							
-							if($id_surat)
-							{
-							$nourut2=(int)substr($id_surat,14,3);
-							$nourut2++;
-							$baru2='SK-';
-							$jenis='-srt01-';
-							$newid2=$baru2.$tahun.$jenis.sprintf("%03s", $nourut2);
-							//echo "$newid2";
-							}
-							else
-							{
-							
-								$baru2='SK-';
-								$no2='001';
-								$jenis='-srt01-';
-								$newid2=$baru2.$tahun.$jenis.$no;
-								//echo"$newid2";
-							}
-							
-					?>	
-					
-               <form method="post" action="surat_proses.php" >
+							<div class="container-fluid">		
+			
+					<form method="post" action="surat_orang.php" >
+					<h4>Masukkan NIM dan Nama mahasiswa </h4>
 				<div class="row">
-				<div class="col-md-4 col-md-offset-4">	
-				<div class="form-group">
-                    <input type="hidden" class="form-control span12" value="<?php echo"$newid2"; ?>" name="id_surat" id="id_surat" hidden="hidden" readonly="readonly" required>
-                </div>	
-				<div class="form-group">
-                    <input type="hidden" class="form-control span12" value="srt01" name="id_jenis_surat" id="id_jenis_surat" hidden="hidden" readonly="readonly" required>
-                </div>				
+				<div class="col-md-4 col-md-offset-4">				
                 <div class="form-group">
-                    <label>Nomor Surat</label>
-                    <input type="text" class="form-control span12" value="<?php echo"$newid"; ?>" name="no_surat" id="no_surat" readonly="readonly" required>
-                </div>
-                <div class="form-group">
-                    <label>Tanggal Surat</label>
-                    <input type="date" class="form-control span12" name="tgl_surat" id="tgl_surat" required>
+                    <label>NIM</label>
+                    <input type="text" class="form-control span12" name="nim" id="nim"  >
                 </div>
 				<div class="form-group">
-                    <label>Alasan</label>
-					<textarea class="form-control span12" name="alasan" rows="5" cols="40" required></textarea>
+                    <label>Nama</label>
+                    <input type="text" class="form-control span12" name="nama" id="nama" >
                 </div>
+               
 								
                 <div class="form-group">
-                     <input type="submit" class="btn btn-primary pull-right" value="Lanjut" />
-                   
+                     <input type="submit" class="btn btn-primary pull-right" value="Tambah" />
+					 <a href="beranda_user.php"><i class="fa fa-fw fa-floppy-o"></i>Selesai</a>
                 </div>
                     <div class="clearfix"></div>
   </div>
 </div>
 				 
             </form>
+			<div class="col-md-12" style="top:5px">
+					<div class="panel panel-default">
+					<div class="panel-heading" style="text-align:center">
+			<table class="table table-hover" class="col-lg-12">
+							<thead align="center">
+									 <tr>											
+											<th><center>Nomor</center></th> 
+											<th><center>NIM</center></th>											
+											<th><center>Nama</center></th>	
+									</tr>
+							</thead>
+			<?php
 			
-					
+			$query3 = "SELECT max(id_surat_orang) as maxID3 FROM surat_orang";
+							$penomoran3 = mysql_query($query3);
+							while ($data3 = mysql_fetch_assoc($penomoran3))
+							{
+							 $id_surat_orang = $data3['maxID3'];							 	
+							}
+							//echo "$no_surat";
+							
+							if($id_surat_orang)
+							{
+							$id_surat_orang=(int)substr($id_surat_orang,11,3);
+							$id_surat_orang++;
+							$baru3='MHS-srt-01-';
+							$newid3=$baru3.sprintf("%03s", $id_surat_orang);
+							//echo "$newid";
+							}
+							else
+							{
+								$baru3='MHS-srt-01-';	
+								$no3='001';
+								$newid3=$baru3.$no3;
+								//echo"$newid";
+							}
+			
+			if(isset($_POST["nim"]))
+	{	
+	$nim=$_POST["nim"];
+	$nama=$_POST["nama"];
+	$id_surat=$_SESSION[id_surat];
+		$result= mysql_query("insert into surat_orang (id_surat_orang,id_surat,nim,nama) VALUES ('$newid3','$id_surat','$nim','$nama')");	
+	}
+	$nomor=0;
+								$result2=  mysql_query("select * from surat_orang where id_surat='$id_surat' ORDER BY nim ASC");
+									while($baris2 = mysql_fetch_assoc($result2))
+									{
+									$nomor++;
+										echo "
+										<tbody>
+											<tr>
+												<td><center>$nomor</center></td>
+												<td><center>$baris2[nim]</center></td>
+												<td><center>$baris2[nama]</center></td>												
+											</tr>
+										<tbody>";
+									}
+
+								mysql_close();
+			?>		
+			
+			</table>
+			</div>
+			</div>
+			</div>
                 </div>
             
             </div>

@@ -46,6 +46,8 @@
 	}
 	  
   ?>
+  
+  
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -82,8 +84,8 @@
                     <li>
                         <a href="beranda_admin.php"><i class="fa fa-fw fa-home"></i> Beranda</a>
                     </li>
-                    <li class="active">
-                        <a href="permintaan.php"><i class="fa fa-fw fa-bar-chart-o"></i> Permintaan Surat</a>
+                    <li class="active" >
+                        <a href="permintaan.php" id="jumlah"><i class="fa fa-fw fa-bar-chart-o"></i> Permintaan Surat</a>
                     </li>
                     <li>
                         <a href="arsip.php"><i class="fa fa-fw fa-table"></i> Arsip</a>
@@ -120,6 +122,80 @@
                             </li>
                         </ol>
                     </div>
+					<table class="table table-hover">
+							<thead align="center">
+									 <tr>											
+											<th><center>Nomor</center></th> 
+											<th><center>NIM</center></th>											
+											<th><center>Nama</center></th>										
+											<th><center>Jenis Surat</center></th>
+											<th><center>Nomor Surat</center></th>
+											<th><center>Tanggal Surat</center></th>
+											<th></th>
+									</tr>
+							</thead>
+								<?php
+								error_reporting(0);
+								require_once 'config.php';
+								
+								$nomor=0;
+								$result=  mysql_query("SELECT * FROM jenis_surat left join surat on jenis_surat.id_jenis_surat=surat.id_jenis_surat left join surat_orang on surat.id_surat=surat_orang.id_surat where disetujui='0' group by surat.id_surat");
+									while($baris = mysql_fetch_assoc($result))
+									{
+									$nomor++;
+										echo "
+										<tbody>
+											<tr>
+												<td><center>$nomor</center></td>
+												<td><center>$baris[nim]</center></td>
+												<td><center>$baris[nama]</center></td>
+												<td><center>$baris[jenis]</center></td>
+												<td><center>$baris[no_surat]</center></td>
+												<td><center>$baris[tanggal_surat_dibuat]</center></td>	
+												<td>
+												<a href='surat_baru.php?lihat=$baris[id_surat]'><button type='submit' class='btn btn-primary'>Lihat</button></a>
+												<a href='permintaan.php?setuju=$baris[no_surat]'><button type='submit' class='btn btn-success'>Setuju</button></a>
+												<a href='permintaan.php?tolak=$baris[no_surat]'><button type='submit' class='btn btn-danger'>Tolak</button></a>
+												 </td>
+												
+											</tr>
+										<tbody>";
+									}
+
+	if(isset($_GET['setuju']))
+	{	
+	$no_surat=$_GET['setuju'];
+	//echo "$no_surat";
+		$result= mysql_query("update surat set disetujui='1' where no_surat='$no_surat' ");	  
+    	if($result >0)
+				{
+				?>
+				<script type="text/javascript">alert('Permintaan disetujui');
+				window.location = 'permintaan.php';</script>
+			<?php
+				}
+				
+		mysql_close();
+	}
+	
+		if(isset($_GET['tolak']))
+	{	
+	$no_surat=$_GET['tolak'];
+	//echo "$no_surat";
+		$result= mysql_query("update surat set disetujui='2' where no_surat='$no_surat' ");	  
+    	if($result >0)
+				{
+				?>
+				<script type="text/javascript">alert('Permintaan ditolak');
+				window.location = 'permintaan.php';</script>
+			<?php
+				}
+				
+		mysql_close();
+	}
+								?>
+
+                            </table>
                 </div>
             
             </div>

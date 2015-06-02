@@ -246,9 +246,6 @@ echo "<option selected value=$id_hak_akses>$akses</option>";
 		echo "<div align=center><h5><font color=red size=3>Form harus diisi semua</font><h5></div>";    
 		}
 	
-	
-	
-	
 	}
 ?>
             </div>
