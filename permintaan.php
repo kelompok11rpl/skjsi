@@ -85,7 +85,7 @@
                         <a href="beranda_admin.php"><i class="fa fa-fw fa-home"></i> Beranda</a>
                     </li>
                     <li class="active" >
-                        <a href="permintaan.php" id="jumlah"><i class="fa fa-fw fa-bar-chart-o"></i> Permintaan Surat</a>
+                        <a href="permintaan.php" id="jumlah"><i class="fa fa-envelope"></i> Permintaan Surat</a>
                     </li>
                     <li>
                         <a href="arsip.php"><i class="fa fa-fw fa-table"></i> Arsip</a>
@@ -153,7 +153,7 @@
 												<td><center>$baris[no_surat]</center></td>
 												<td><center>$baris[tanggal_surat_dibuat]</center></td>	
 												<td>
-												<a href='surat_baru.php?lihat=$baris[id_surat]'><button type='submit' class='btn btn-primary'>Lihat</button></a>
+												<a href='surat_proses2.php?lihat=$baris[id_surat]'><button type='submit' class='btn btn-primary'>Lihat</button></a>
 												<a href='permintaan.php?setuju=$baris[no_surat]'><button type='submit' class='btn btn-success'>Setuju</button></a>
 												<a href='permintaan.php?tolak=$baris[no_surat]'><button type='submit' class='btn btn-danger'>Tolak</button></a>
 												 </td>

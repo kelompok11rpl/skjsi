@@ -83,7 +83,7 @@
                         <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Beranda</a>
                     </li>
                     <li>
-                        <a href="permintaan.php"><i class="fa fa-fw fa-bar-chart-o"></i> Permintaan Surat</a>
+                        <a href="permintaan.php"><i class="fa fa-envelope"></i> Permintaan Surat</a>
                     </li>
                     <li>
                         <a href="arsip.php"><i class="fa fa-fw fa-table"></i> Arsip</a>
