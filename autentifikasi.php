@@ -8,7 +8,7 @@ include "config.php";
 	$pass=base64_encode($password);
 	$sql=mysql_query("SELECT id_user,nama,password,id_hak_akses FROM user
 					  WHERE id_user = '$_POST[username]' 
-					  AND password = '$pass'"); 
+					  AND password = '$pass' AND status='Aktif'"); 
 	$data=mysql_fetch_array($sql); 
 
 	// untuk mendeteksi apakah user tersebut memang terdaftar, 

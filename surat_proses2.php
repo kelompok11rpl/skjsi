@@ -42,5 +42,23 @@ if($id_jenis_surat=='srt01')
 window.location = 'surat_baru.php?surat=<?php echo"$id_surat";?>';</script>
 <?php
 }
+else
+{
+if($id_jenis_surat=='srt02')
+{?>
+<script type="text/javascript">
+window.location = 'surat_baru2.php?surat=<?php echo"$id_surat";?>';</script>
+<?php
+}
+else
+{
+if($id_jenis_surat=='srt03')
+{?>
+<script type="text/javascript">
+window.location = 'surat_baru2.php?surat=<?php echo"$id_surat";?>';</script>
+<?php
+}
+}
+}
 	}
 ?>
