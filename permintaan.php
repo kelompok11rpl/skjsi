@@ -151,13 +151,25 @@
 												<td><center>$baris[nama]</center></td>
 												<td><center>$baris[jenis]</center></td>
 												<td><center>$baris[no_surat]</center></td>
-												<td><center>$baris[tanggal_surat_dibuat]</center></td>	
+												<td><center>$baris[tanggal_surat_dibuat]</center></td>";	
+												if($baris[id_jenis_surat]=='srt06')
+												{
+												echo "<td>
+												<a href='permintaan.php?setuju=$baris[no_surat]'><button type='submit' class='btn btn-success'>Setuju</button></a>
+												<a href='permintaan.php?tolak=$baris[no_surat]'><button type='submit' class='btn btn-danger'>Tolak</button></a>
+												</td>";
+												
+												}
+												else
+												{
+												echo"
 												<td>
 												<a href='surat_proses2.php?lihat=$baris[id_surat]'><button type='submit' class='btn btn-primary'>Lihat</button></a>
 												<a href='permintaan.php?setuju=$baris[no_surat]'><button type='submit' class='btn btn-success'>Setuju</button></a>
 												<a href='permintaan.php?tolak=$baris[no_surat]'><button type='submit' class='btn btn-danger'>Tolak</button></a>
-												 </td>
-												
+												 </td>";
+												}
+												echo"
 											</tr>
 										<tbody>";
 									}

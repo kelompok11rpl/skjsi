@@ -144,7 +144,7 @@ while ($data = mysql_fetch_assoc($update))
 ?>						
 						
 				<h3>Ubah Password</h3>
-                <form method="post" action="ganti_password.php">
+                <form method="post" action="ganti_password_user.php">
 				<div class="row">
 				<div class="col-md-4 col-md-offset-4">			
                 
