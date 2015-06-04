@@ -125,7 +125,7 @@ error_reporting(0);
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Bantuan Dana Himpunan
+                            Surat Kunjungan Industri
                         </h1>
                          <ol class="breadcrumb">
                             <li>

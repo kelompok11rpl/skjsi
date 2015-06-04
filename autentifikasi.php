@@ -35,7 +35,11 @@ header('location:halaman-admin.php');
 } 
 else 
 { 
-echo "<p>Login gagal! ID tidak terdaftar atau password salah</p><p><a href=\"index.php\">Ulangi Lagi</a></p>"; 
+//echo "<p>Login gagal! ID tidak terdaftar atau password salah</p><p><a href=\"index.php\">Ulangi Lagi</a></p>"; 
+?>
+<script type="text/javascript">alert('Username atau Password Salah');
+window.location = 'index.php';</script>
+<?php
 
 } 
 

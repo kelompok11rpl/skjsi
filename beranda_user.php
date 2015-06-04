@@ -35,7 +35,7 @@
 <body>
 <?php
 	session_start(); // memulai session 
-
+	error_reporting(0);
 	include "config.php";
 	if($_SESSION['level']=='usr02')
 	{		 
@@ -116,7 +116,30 @@
             </div>
             <!-- /.navbar-collapse -->
         </nav>
-
+<?php											   
+													
+												$cek_permintaan=mysql_query("select count(*) as cek_permintaan from surat where disetujui='0' and id_user='$_SESSION[id_user]'");  
+												while ($data = mysql_fetch_assoc($cek_permintaan))
+											{
+											$cek_permintaan=$data['cek_permintaan'];
+											}
+												
+												$cek_setuju=mysql_query("select count(*) as cek_setuju from surat where disetujui='1' and id_user='$_SESSION[id_user]'");  
+												while ($data2 = mysql_fetch_assoc($cek_setuju))
+											{
+											$cek_setuju=$data2['cek_setuju'];
+											}
+											
+											$cek_tolak=mysql_query("select count(*) as cek_tolak from surat where disetujui='2' and id_user='$_SESSION[id_user]'");  
+												while ($data3 = mysql_fetch_assoc($cek_tolak))
+											{
+											$cek_tolak=$data['cek_tolak'];
+											if($cek_tolak==null)
+											{
+											$cek_tolak=0;
+											}
+											}
+											?>
         <div id="page-wrapper">
 
             <div class="container-fluid">
@@ -134,7 +157,56 @@
                         </ol>
                     </div>
                 </div>
-            
+             <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-envelope fa-5x fa-spin"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge"><?php  echo"$cek_permintaan";?></div>
+                                        <div>Permintaan</div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+					
+					 <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-check fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge"><?php  echo"$cek_setuju";?></div>
+                                        <div>Disetujui</div>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+					
+					 <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-ban fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge"><?php  echo"$cek_tolak";?></div>
+                                        <div>Ditolak</div>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
             </div>
             <!-- /.container-fluid -->
 
