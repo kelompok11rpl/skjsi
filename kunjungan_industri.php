@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Beranda</title>
+    <title>Surat</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
 <body>
 <?php
 	session_start(); // memulai session 
-
+error_reporting(0);
 	include "config.php";
 	if($_SESSION['level']=='usr02')
 	{		 
@@ -79,12 +79,12 @@
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                  <ul class="nav navbar-nav side-nav">
+                <ul class="nav navbar-nav side-nav">
                     <li class="dropdown">
-					<li class="active">
+					<li>
                         <a href="beranda_user.php"><i class="fa fa-fw fa-home"></i> Beranda</a>
                     </li>
-                        <li >
+                        <li  class="active">
 							<a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-envelope"></i> Surat <i class="fa fa-fw fa-caret-down"></i></a>
 							<ul id="demo" class="collapse">
 								<li>
@@ -125,14 +125,128 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Beranda
+                            Bantuan Dana Himpunan
                         </h1>
-                        <ol class="breadcrumb">
-                            <li class="active">
-                                <i class="fa fa-home"></i> Beranda
+                         <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-home"></i>  <a href="beranda_user.php">Beranda</a>
+                            </li>                            
+							<li class="active">
+                                <i class="fa fa-Plus"></i> Surat
                             </li>
                         </ol>
                     </div>
+							<div class="container-fluid">			
+					<?php
+						date_default_timezone_get('Asia/Jakarta');
+						$tahun=date("Y");
+							$query = "SELECT max(no_surat) as maxID FROM surat where no_surat LIKE '%/UN.16.15.5.2/DL/%'";
+							$penomoran = mysql_query($query);
+							while ($data = mysql_fetch_assoc($penomoran))
+							{
+							 $no_surat = $data['maxID'];							 	
+							}
+							//echo "$no_surat";
+							
+							if($no_surat)
+							{
+							$nourut=(int)substr($no_surat,0,3);
+							$nourut++;
+							$baru='/UN.16.15.5.2/DL/';
+							$newid=sprintf("%03s", $nourut).$baru.$tahun;
+							//echo "$newid";
+							}
+							else
+							{
+							
+								$baru='/UN.16.15.5.2/DL/';
+								$no='001';
+								$newid=$no.$baru.$tahun;
+								//echo"$newid";
+							}
+							
+							$query2 = "SELECT max(id_surat) as maxID2 FROM surat";
+							$penomoran2 = mysql_query($query2);
+							while ($data2 = mysql_fetch_assoc($penomoran2))
+							{
+							 $id_surat = $data2['maxID2'];							 	
+							}
+							//echo "$id_surat";
+							
+							if($id_surat)
+							{
+							$nourut2=(int)substr($id_surat,14,3);
+							$nourut2++;
+							$baru2='SK-';
+							$jenis='-srt01-';
+							$newid2=$baru2.$tahun.$jenis.sprintf("%03s", $nourut2);
+							//echo "$newid2";
+							}
+							else
+							{
+							
+								$baru2='SK-';
+								$no2='001';
+								$jenis='-srt01-';
+								$newid2=$baru2.$tahun.$jenis.$no;
+								//echo"$newid2";
+							}
+							
+					?>	
+					
+               <form method="post" action="surat_proses.php" >
+				<div class="row">
+				<div class="col-md-4 col-md-offset-4">	
+				<div class="form-group">
+                    <input type="hidden" class="form-control span12" value="<?php echo"$newid2"; ?>" name="id_surat" id="id_surat" hidden="hidden" readonly="readonly" required>
+                </div>	
+				<div class="form-group">
+                    <input type="hidden" class="form-control span12" value="srt04" name="id_jenis_surat" id="id_jenis_surat" hidden="hidden" readonly="readonly" required>
+                </div>				
+                <div class="form-group">
+                    <label>Nomor Surat</label>
+                    <input type="text" class="form-control span12" value="<?php echo"$newid"; ?>" name="no_surat5" id="no_surat5" readonly="readonly" required>
+                </div>
+                <div class="form-group">
+                    <label>Tanggal Surat</label>
+                    <input type="date" class="form-control span12" name="tgl_surat" id="tgl_surat" required>
+                </div>
+				<div class="form-group">
+                    <label>Alamat Surat</label>
+					<input type="text" class="form-control span12" name="alamat" id="alamat" required>
+                </div>				
+				<div class="form-group">
+                    <label>Hari</label>
+					<input type="text" class="form-control span12" name="hari" id="hari" required>
+                </div>
+				<div class="form-group">
+                    <label>Tanggal</label>
+					<input type="date" class="form-control span12" name="tgl_mulai" id="tgl_mulai" required>
+                </div>				
+				<div class="form-group">
+                    <label>Pukul</label>
+					<input type="time" class="form-control span12" name="pukul" id="pukul" required>
+                </div>
+				<div class="form-group">
+                    <label>Tempat</label>
+					<input type="text" class="form-control span12" name="tempat" id="tempat" required>
+                </div>
+				<div class="form-group">
+                    <label>Jumlah Peserta</label>
+					<input type="number" class="form-control span12" name="jumlah_peserta" id="jumlah_peserta" required>
+                </div>
+								
+                <div class="form-group">
+                     <input type="submit" class="btn btn-primary pull-right" value="Lanjut" />
+                   
+                </div>
+                    <div class="clearfix"></div>
+  </div>
+</div>
+				 
+            </form>
+			
+					
                 </div>
             
             </div>

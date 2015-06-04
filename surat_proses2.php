@@ -23,7 +23,7 @@ $no++;
  $izin_matkul = $data['izin_matkul'];
  $izin_kuliah = $data['izin_kuliah'];
  $keperluan_ambil_data = $data['keperluan_ambil_data'];
- $tujuan = $data['tujuan'];
+ $hari = $data['hari'];
  $keperluan = $data['keperluan'];
  $nim = $data['nim'];
  $id_jenis_surat = $data['id_jenis_surat'];
@@ -55,8 +55,36 @@ else
 if($id_jenis_surat=='srt03')
 {?>
 <script type="text/javascript">
-window.location = 'surat_baru2.php?surat=<?php echo"$id_surat";?>';</script>
+window.location = 'surat_baru3.php?surat=<?php echo"$id_surat";?>';</script>
 <?php
+}
+else
+{
+if($id_jenis_surat=='srt05')
+{?>
+<script type="text/javascript">
+window.location = 'surat_baru4.php?surat=<?php echo"$id_surat";?>';</script>
+<?php
+}
+else
+{
+if($id_jenis_surat=='srt04')
+{?>
+<script type="text/javascript">
+window.location = 'surat_baru5.php?surat=<?php echo"$id_surat";?>';</script>
+<?php
+}
+else
+{
+if($id_jenis_surat=='srt06')
+{?>
+<script type="text/javascript">alert('Tidak bisa dilihat');
+window.location = 'permintaan.php';</script>
+<?php
+}
+}
+
+}
 }
 }
 }

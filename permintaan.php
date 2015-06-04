@@ -139,7 +139,7 @@
 								require_once 'config.php';
 								
 								$nomor=0;
-								$result=  mysql_query("SELECT * FROM jenis_surat left join surat on jenis_surat.id_jenis_surat=surat.id_jenis_surat left join surat_orang on surat.id_surat=surat_orang.id_surat where disetujui='0' group by surat.id_surat");
+								$result=  mysql_query("SELECT * FROM jenis_surat left join surat on jenis_surat.id_jenis_surat=surat.id_jenis_surat left join surat_orang on surat.id_surat=surat_orang.id_surat where disetujui='0' group by surat.id_surat DESC");
 									while($baris = mysql_fetch_assoc($result))
 									{
 									$nomor++;

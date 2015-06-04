@@ -2771,7 +2771,7 @@ $no++;
  $izin_matkul = $data['izin_matkul'];
  $izin_kuliah = $data['izin_kuliah'];
  $keperluan_ambil_data = $data['keperluan_ambil_data'];
- $tujuan = $data['tujuan'];
+ $hari = $data['hari'];
  $keperluan = $data['keperluan'];
  $nim = $data['nim'];
  $id_jenis_surat = $data['id_jenis_surat'];
@@ -2891,7 +2891,7 @@ style='mso-tab-count:1'>         </span>: </span><span style='mso-ansi-language:
 IN'><?php echo"$no_surat";?></span><span
 style='mso-ansi-language:IN'>5</span><span lang=EN-US><span style='mso-tab-count:
 0'>      </span></span><span style='mso-ansi-language:
-IN'><span style='mso-tab-count:1'>       </span></span><span lang=EN-US>Padang, <?php echo"$tgl_tgl $tgl_bulan $tgl_tahun";?></span> </p>
+IN'><span style='mso-tab-count:1'>    &nbsp;&nbsp;&nbsp;&nbsp;   </span></span><span lang=EN-US>Padang, <?php echo"$tgl_tgl $tgl_bulan $tgl_tahun";?></span> </p>
 
 <p class=MsoNormal style='tab-stops:63.0pt'><span lang=EN-US>Lampiran<span
 style='mso-tab-count:1'>    </span>: -</span></p>

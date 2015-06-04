@@ -9,8 +9,10 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 15">
 <meta name=Originator content="Microsoft Word 15">
-<link rel=File-List href="surat%20baru_files/filelist.xml">
-<link rel=Edit-Time-Data href="surat%20baru_files/editdata.mso">
+<link rel=File-List
+href="PERMOHONAN%20BANTUAN%20DANA%20HIMPUNAN_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="PERMOHONAN%20BANTUAN%20DANA%20HIMPUNAN_files/editdata.mso">
 <!--[if !mso]>
 <style>
 v\:* {behavior:url(#default#VML);}
@@ -20,21 +22,21 @@ w\:* {behavior:url(#default#VML);}
 </style>
 <![endif]--><!--[if gte mso 9]><xml>
  <o:DocumentProperties>
-  <o:Author>SI-office-02</o:Author>
-  <o:Template>04b - Surat Izin Kuliah.dotx</o:Template>
+  <o:Author>Husnil Kamil</o:Author>
+  <o:Template>Kop Surat Jurusan SI.dotx</o:Template>
   <o:LastAuthor>PRIVATE</o:LastAuthor>
   <o:Revision>2</o:Revision>
-  <o:TotalTime>117</o:TotalTime>
-  <o:LastPrinted>2014-10-30T04:36:00Z</o:LastPrinted>
-  <o:Created>2015-05-20T06:34:00Z</o:Created>
-  <o:LastSaved>2015-05-20T06:34:00Z</o:LastSaved>
+  <o:TotalTime>1</o:TotalTime>
+  <o:LastPrinted>2014-11-07T05:56:00Z</o:LastPrinted>
+  <o:Created>2015-06-03T13:54:00Z</o:Created>
+  <o:LastSaved>2015-06-03T13:54:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>164</o:Words>
-  <o:Characters>941</o:Characters>
+  <o:Words>123</o:Words>
+  <o:Characters>702</o:Characters>
   <o:Company>Universitas Andalas</o:Company>
-  <o:Lines>7</o:Lines>
-  <o:Paragraphs>2</o:Paragraphs>
-  <o:CharactersWithSpaces>1103</o:CharactersWithSpaces>
+  <o:Lines>5</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>824</o:CharactersWithSpaces>
   <o:Version>15.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -42,12 +44,12 @@ w\:* {behavior:url(#default#VML);}
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
 </xml><![endif]-->
-<link rel=themeData href="surat%20baru_files/themedata.thmx">
-<link rel=colorSchemeMapping href="surat%20baru_files/colorschememapping.xml">
+<link rel=themeData
+href="PERMOHONAN%20BANTUAN%20DANA%20HIMPUNAN_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="PERMOHONAN%20BANTUAN%20DANA%20HIMPUNAN_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:PunctuationKerning/>
@@ -221,8 +223,8 @@ w\:* {behavior:url(#default#VML);}
    UnhideWhenUsed="true" Name="Default Paragraph Font"/>
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Body Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Body Text Indent"/>
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="List Continue"/>
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
@@ -692,6 +694,13 @@ w\:* {behavior:url(#default#VML);}
 	mso-font-pitch:auto;
 	mso-font-signature:0 0 0 0 0 0;}
 @font-face
+	{font-family:"Segoe Print";
+	panose-1:2 0 6 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:655 0 0 0 159 0;}
+@font-face
 	{font-family:"\@MS Mincho";
 	panose-1:2 2 6 9 4 2 5 8 3 4;
 	mso-font-charset:128;
@@ -756,6 +765,32 @@ p.MsoFooter, li.MsoFooter, div.MsoFooter
 	mso-bidi-theme-font:minor-bidi;
 	mso-ansi-language:EN-US;
 	mso-fareast-language:EN-US;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{mso-style-link:"Body Text Indent Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:54.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
 p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
 	{mso-style-noshow:yes;
 	mso-style-priority:99;
@@ -890,12 +925,16 @@ span.BalloonTextChar
 	font-family:"Lucida Grande","serif";
 	mso-ascii-font-family:"Lucida Grande";
 	mso-hansi-font-family:"Lucida Grande";}
-span.SpellE
-	{mso-style-name:"";
-	mso-spl-e:yes;}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
+span.BodyTextIndentChar
+	{mso-style-name:"Body Text Indent Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Body Text Indent";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -915,29 +954,24 @@ span.GramE
 	mso-fareast-language:EN-US;}
  /* Page Definitions */
  @page
-	{mso-footnote-separator:url("surat%20baru_files/header.htm") fs;
-	mso-footnote-continuation-separator:url("surat%20baru_files/header.htm") fcs;
-	mso-endnote-separator:url("surat%20baru_files/header.htm") es;
-	mso-endnote-continuation-separator:url("surat%20baru_files/header.htm") ecs;}
+	{mso-footnote-separator:url("PERMOHONAN%20BANTUAN%20DANA%20HIMPUNAN_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("PERMOHONAN%20BANTUAN%20DANA%20HIMPUNAN_files/header.htm") fcs;
+	mso-endnote-separator:url("PERMOHONAN%20BANTUAN%20DANA%20HIMPUNAN_files/header.htm") es;
+	mso-endnote-continuation-separator:url("PERMOHONAN%20BANTUAN%20DANA%20HIMPUNAN_files/header.htm") ecs;}
 @page WordSection1
 	{size:595.0pt 842.0pt;
-	margin:127.6pt 90.0pt 72.0pt 90.0pt;
-	mso-header-margin:21.3pt;
+	margin:127.6pt 77.6pt 67.5pt 78.0pt;
+	mso-header-margin:45.35pt;
 	mso-footer-margin:35.4pt;
-	mso-even-header:url("surat%20baru_files/header.htm") eh1;
-	mso-header:url("surat%20baru_files/header.htm") h1;
-	mso-even-footer:url("surat%20baru_files/header.htm") ef1;
-	mso-footer:url("surat%20baru_files/header.htm") f1;
-	mso-first-header:url("surat%20baru_files/header.htm") fh1;
-	mso-first-footer:url("surat%20baru_files/header.htm") ff1;
+	mso-header:url("PERMOHONAN%20BANTUAN%20DANA%20HIMPUNAN_files/header.htm") h1;
 	mso-paper-source:0;}
 div.WordSection1
 	{page:WordSection1;}
  /* List Definitions */
  @list l0
-	{mso-list-id:1579633925;
+	{mso-list-id:623078883;
 	mso-list-type:hybrid;
-	mso-list-template-ids:-752960440 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+	mso-list-template-ids:726427286 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
 @list l0:level1
 	{mso-level-tab-stop:none;
 	mso-level-number-position:left;
@@ -981,9 +1015,9 @@ div.WordSection1
 	mso-level-number-position:right;
 	text-indent:-9.0pt;}
 @list l1
-	{mso-list-id:1836843961;
+	{mso-list-id:886768531;
 	mso-list-type:hybrid;
-	mso-list-template-ids:2056042942 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+	mso-list-template-ids:-227659982 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
 @list l1:level1
 	{mso-level-tab-stop:none;
 	mso-level-number-position:left;
@@ -1022,6 +1056,190 @@ div.WordSection1
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
 @list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:1035272963;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-623843370 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3
+	{mso-list-id:1571384180;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1884209762 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l4
+	{mso-list-id:1579633925;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-752960440 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l4:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l4:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l4:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l5
+	{mso-list-id:2056272418;
+	mso-list-type:hybrid;
+	mso-list-template-ids:726427286 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l5:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l5:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l5:level9
 	{mso-level-number-format:roman-lower;
 	mso-level-tab-stop:none;
 	mso-level-number-position:right;
@@ -1086,12 +1304,12 @@ table.MsoTableGrid
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
  </o:shapelayout></xml><![endif]-->
- <table id="ttop">
+  <table id="ttop">
 <tr><td rowspan="2"><img src="kop.jpg"style="width:100%;height:140px;"></td></tr>
 </table>
 </head>
 
-<body lang=IN style='tab-interval:36.0pt'  onload="window.print()">
+<body lang=IN link=blue vlink=purple style='tab-interval:36.0pt' onload="window.print()">
 <div id="mar">
 <div class=WordSection1>
 <?php
@@ -1104,14 +1322,12 @@ if(isset($_GET['surat']))
 	$no=0;
 	$hidden="hidden='hidden'";
 	$hidden2="hidden='hidden'";
-	
 	$query = "SELECT * FROM surat left join surat_orang on surat.id_surat=surat_orang.id_surat left join jenis_surat on surat.id_jenis_surat=jenis_surat.id_jenis_surat where surat.id_surat = '$id_surat'";
 $update = mysql_query($query);
 while ($data = mysql_fetch_assoc($update))
 {
 $no++;
  $no_surat = $data['no_surat']; 
- $id_surat = $data['id_surat']; 
  $tanggal_surat_dibuat = $data['tanggal_surat_dibuat'];
  $tanggal_mulai = $data['tanggal_mulai'];
  $tanggal_selesai = $data['tanggal_selesai'];
@@ -1130,88 +1346,105 @@ $no++;
  $nama=$data['nama'];
  $no;
  
- 
-
- 
  $tgl_tgl=(int)substr($tanggal_surat_dibuat,8,2);
  $tgl_bulan=(int)substr($tanggal_surat_dibuat,5,2);
  $tgl_tahun=(int)substr($tanggal_surat_dibuat,0,4);
+ $waktu=(string)substr($waktu,0,5);
+ $tgl_tgl2=(int)substr($tanggal_mulai,8,2);
+ $tgl_bulan2=(int)substr($tanggal_mulai,5,2);
+ $tgl_tahun2=(int)substr($tanggal_mulai,0,4);
+ $tgl_tgl3=(int)substr($tanggal_selesai,8,2);
+ $tgl_bulan3=(int)substr($tanggal_selesai,5,2);
+ $tgl_tahun3=(int)substr($tanggal_selesai,0,4);
  
- if($tgl_bulan==01)
+ if((($tgl_bulan==01)||($tgl_bulan2==01)))
  {
  $tgl_bulan="Januari";
+ $tgl_bulan2="Januari";
  }
  else
  {
- if($tgl_bulan==02)
+ if((($tgl_bulan==02)||($tgl_bulan2==02)))
 	{
 	$tgl_bulan="Februari";
+	$tgl_bulan2="Februari";
 	}
 	else
 	{ 
-	if($tgl_bulan==02)
+	if((($tgl_bulan==02)||($tgl_bulan2==02)))
 	{
 	$tgl_bulan="Februari";
+	$tgl_bulan2="Februari";
 	}
 	else
 	{
-		if($tgl_bulan==03)
+		if((($tgl_bulan==03)||($tgl_bulan2==03)))
 		{
 		$tgl_bulan="Maret";
+		$tgl_bulan2="Maret";
 		}
 	else
 	{
-		if($tgl_bulan==04)
+		if((($tgl_bulan==04)||($tgl_bulan2==04)))
 			{
 			$tgl_bulan="April";
+			$tgl_bulan2="April";
 			}
 			
 	else
 	{
-				if($tgl_bulan==05)
+				if((($tgl_bulan==05)||($tgl_bulan2==05)))
 				{
 				$tgl_bulan="Mei";
+				$tgl_bulan2="Mei";
 				}
 	else
 	{
-					if($tgl_bulan==06)
+					if((($tgl_bulan==06)||($tgl_bulan2==06)))
 					{
 					$tgl_bulan="Juni";
+					$tgl_bulan2="Juni";
 					}
 	else
 	{
-					if($tgl_bulan==07)
+					if((($tgl_bulan==07)||($tgl_bulan2==07)))
 					{
 					$tgl_bulan="Juli";
+					$tgl_bulan2="Juli";
 					}
 	else
-	{				if($tgl_bulan==08)
+	{				if((($tgl_bulan==08)||($tgl_bulan2==08)))
 					{
 					$tgl_bulan="Agustus";
+					$tgl_bulan2="Agustus";
 					}	
 	else
 	{
-					if($tgl_bulan==09)
+					if((($tgl_bulan==09)||($tgl_bulan2==09)))
 					{
 					$tgl_bulan="September";
+					$tgl_bulan2="September";
 					}
 	else
 	{
-					if($tgl_bulan==10)
+					if((($tgl_bulan==10)||($tgl_bulan2==10)))
 					{
 					$tgl_bulan="Oktober";
+					$tgl_bulan2="Oktober";
 					}
 	else
 	{	
-					if($tgl_bulan==11)
+					if((($tgl_bulan==11)||($tgl_bulan2==11)))
 					{
 					$tgl_bulan="November";
+					$tgl_bulan2="November";
 					}
 	else
 	{
-					if($tgl_bulan==12)
+					if((($tgl_bulan==12)||($tgl_bulan2==12)))
 					{
 					$tgl_bulan="Desember";
+					$tgl_bulan2="Desember";
 					}
 					
  
@@ -1228,8 +1461,6 @@ $no++;
 }
 }
 }
-
-
 if($no>1)
  {
  $hidden="";
@@ -1240,226 +1471,166 @@ if($no>1)
  }
 	}
 ?>
-<table width="100%">
-<tr>
-<td align="left">Nomor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <?php echo"$no_surat";?>
-</td>
-<td align="right">Padang, <?php echo"$tgl_tgl $tgl_bulan $tgl_tahun";?>
-</td>
-</tr>
-</table>
+<p class=MsoNormal style='tab-stops:63.0pt 304.8pt'><span lang=EN-US>Nomor<span
+style='mso-tab-count:1'>         </span>: <?php echo"$no_surat";?><span style='mso-tab-count:
+2' align=right>   &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             </span>Padang, <span
+style='mso-spacerun:yes' align=right> </span><?php echo"$tgl_tgl $tgl_bulan $tgl_tahun";?></span></p>
 
+<p class=MsoNormal style='tab-stops:63.0pt'><span lang=EN-US>Lampiran<span
+style='mso-tab-count:1'>    </span>: 1 (satu) berkas</span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span
-class=SpellE><span lang=EN-US>Lampiran</span></span><span lang=EN-US><span
-style='mso-tab-count:1'>    </span>: -</span></p>
+<p class=MsoNormal style='margin-left:70.9pt;text-indent:-70.9pt;tab-stops:
+63.0pt'><span lang=EN-US>Hal<span style='mso-tab-count:1'>               </span>:
+<span style='mso-spacerun:yes'> </span><b style='mso-bidi-font-weight:normal'><u>Permohonan
+Bantuan Dana<o:p></o:p></u></b></span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span lang=EN-US>Hal<span
-style='mso-tab-count:1'>               </span>: <span class=SpellE><b
-style='mso-bidi-font-weight:normal'><u>Surat</u></b></span><b style='mso-bidi-font-weight:
-normal'><u> <span class=SpellE>Izin</span> <span class=SpellE>Tidak</span> <span
-class=SpellE>Mengikuti</span> <span class=SpellE>Perkuliahan</span><o:p></o:p></u></b></span></p>
+<p class=MsoNormal style='tab-stops:63.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+<p class=MsoNormal style='tab-stops:63.0pt'><span lang=EN-US>Kepada,</span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span
-class=SpellE><span lang=EN-US>Kepada</span></span><span lang=EN-US> </span></p>
+<p class=MsoNormal style='tab-stops:63.0pt'><span lang=EN-US>Yth. <?php echo"$alamat_surat";?></span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt right 378.0pt'><span
-class=SpellE><span lang=EN-US>Yth</span></span><span lang=EN-US>. <span
-class=SpellE>Staf</span> <span class=SpellE>Pengajar</span> <span class=SpellE>Jurusan</span>
-<span class=SpellE>Sistem</span> <span class=SpellE>Informasi</span></span></p>
+<p class=MsoNormal style='tab-stops:63.0pt'><span lang=EN-US>Di </span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span lang=EN-US>&amp;
-<span class=SpellE>Staf</span> <span class=SpellE>Pengajar</span> <span
-class=SpellE>Luar</span> <span class=SpellE>Biasa</span></span></p>
+<p class=MsoNormal style='tab-stops:1.0cm'><span lang=EN-US><span
+style='mso-tab-count:1'>          </span>Tempat</span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span class=GramE><span
-lang=EN-US>di</span></span><span lang=EN-US>.</span></p>
+<p class=MsoNormal style='tab-stops:1.0cm'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='text-indent:36.0pt;line-height:115%'><span
-class=SpellE><span lang=EN-US>Tempat</span></span><span lang=EN-US>.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='mso-ansi-language:IN'>Assalamu’alaikum Wr.Wb</span></i></b><span
+style='mso-ansi-language:IN'>.<o:p></o:p></span></p>
 
-<p class=MsoNormal style='text-indent:36.0pt;line-height:115%'><span
-lang=EN-US style='font-size:3.0pt;mso-bidi-font-size:12.0pt;line-height:115%'><o:p>&nbsp;</o:p></span></p>
+<p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+text-justify:inter-ideograph;line-height:115%'><span lang=EN-US
+style='font-family:"Cambria","serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span
-class=SpellE><span lang=EN-US>Dengan</span></span><span lang=EN-US> <span
-class=SpellE>hormat</span>,</span></p>
+<p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+text-justify:inter-ideograph;line-height:115%'><span lang=EN-US
+style='font-family:"Cambria","serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Sehubungan dengan telah dilaksanakannya <?php echo"$keperluan";?>, pada :<o:p></o:p></span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span
-class=SpellE><span lang=EN-US>Melalui</span></span><span lang=EN-US> <span
-class=SpellE>ini</span> <span class=SpellE>disampaikan</span> <span
-class=SpellE>bahwa</span> <span class=SpellE>mahasiswa</span> <span
-class=SpellE>Jurusan</span> <span class=SpellE>Sistem</span> <span
-class=SpellE>Informasi</span>, <span class=SpellE>Fakultas</span> <span
-class=SpellE>Tekn</span></span><span style='mso-ansi-language:IN'>ologi
-Informasi</span><span lang=EN-US> <span class=SpellE>Universitas</span> <span
-class=SpellE>Andalas</span> <span class=SpellE>berikut</span> <span
-class=SpellE>ini</span>:</span></p>
+<p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+text-justify:inter-ideograph;line-height:115%'><span lang=EN-US
+style='font-size:5.0pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"Cambria","serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+<p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+text-justify:inter-ideograph;text-indent:36.0pt;line-height:115%'><span
+lang=EN-US style='font-family:"Cambria","serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Hari <span style='mso-tab-count:3'>                            </span>:
+<?php echo"$hari";?><span style='mso-tab-count:1'>        </span><o:p></o:p></span></p>
 
-<div align=center>
+<p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+text-justify:inter-ideograph;text-indent:36.0pt;line-height:115%'><span
+lang=EN-US style='font-family:"Cambria","serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Tanggal<span style='mso-tab-count:2'>                                 </span>:
+<?php echo"$tgl_tgl2 - $tgl_tgl3 $tgl_bulan2 $tgl_tahun2";?><o:p></o:p></span></p>
 
-<table <?php echo"$hidden";?> class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt' >
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:12.55pt'>
-  <td width=53 valign=top style='width:39.95pt;border:solid windowtext 1.0pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.55pt'>
-  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
-  tab-stops:63.0pt'><b style='mso-bidi-font-weight:normal'><span lang=EN-US>No<o:p></o:p></span></b></p>
-  </td>
-  <td width=264 valign=top style='width:198.3pt;border:solid windowtext 1.0pt;
-  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
-  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.55pt'>
-  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
-  tab-stops:63.0pt'><span class=SpellE><b style='mso-bidi-font-weight:normal'><span
-  lang=EN-US>Nama</span></b></span><b style='mso-bidi-font-weight:normal'><span
-  lang=EN-US><o:p></o:p></span></b></p>
-  </td>
-  <td width=213 valign=top style='width:159.4pt;border:solid windowtext 1.0pt;
-  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
-  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.55pt'>
-  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
-  tab-stops:63.0pt'><b style='mso-bidi-font-weight:normal'><span lang=EN-US>NIM<o:p></o:p></span></b></p>
-  </td>
- </tr>
- <?php
- $no=0;
- $result=  mysql_query("SELECT * FROM surat left join surat_orang on surat.id_surat=surat_orang.id_surat left join jenis_surat on surat.id_jenis_surat=jenis_surat.id_jenis_surat where surat.id_surat = '$id_surat' ORDER BY nim ASC");
-									while($baris = mysql_fetch_assoc($result))
-									{
-									$nomor++;
-									$nama="$baris[nama]";
-									$nim="$baris[nim]";
-										echo "
-										<tbody>
-											 <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:13.25pt'>
-  <td width=53 valign=top style='width:39.95pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
-  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
-  tab-stops:63.0pt'><span lang=EN-US>$nomor</span></p>
-  </td>
-  <td width=264 valign=top style='width:198.3pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
-  <p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span
-  lang=EN-US>$baris[nama]</span></p>
-  </td>
-  <td width=213 valign=top style='width:159.4pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
-  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
-  tab-stops:63.0pt'><span lang=EN-US>$baris[nim]</span></p>
-  </td>
- </tr>
-										<tbody>";
-									}
+<p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+text-justify:inter-ideograph;text-indent:36.0pt;line-height:115%'><span
+lang=EN-US style='font-family:"Cambria","serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Waktu<span style='mso-tab-count:3'>                         </span>:
+<?php echo"$waktu";?> WIB – selesai<o:p></o:p></span></p>
 
-								mysql_close();
- ?>
- 
- 
- 
+<p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+text-justify:inter-ideograph;text-indent:36.0pt;line-height:115%'><span
+lang=EN-US style='font-family:"Cambria","serif";mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin'>Tempat<span style='mso-tab-count:2'>                       </span>:
+<?php echo"$tempat";?><o:p></o:p></span></p>
 
-</table>
-
-<form <?php echo"$hidden2";?> >
-<table >
-<tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:13.25pt'>
-  <td width=53 valign=top style='width:39.95pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.1pt;height:13.25pt'>
-  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
-  tab-stops:63.0pt'><span lang=EN-US>NIM</span></p>
-  </td>
-  <td width=264 valign=top style='width:198.3pt;border-top:none;border-left:
-  none;padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
-  <p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span
-  lang=EN-US>: <?php echo"$nim";?></span></p>
-  </td>
-  </tr>
-  <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:13.25pt'>
-  <td width=53 valign=top style='width:39.95pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
-  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
-  tab-stops:63.0pt'><span lang=EN-US>Nama</span></p>
-  </td>
-  <td width=264 valign=top style='width:198.3pt;border-top:none;border-left:
-  none;padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
-  <p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span
-  lang=EN-US>: <?php echo"$nama";?></span></p>
-  </td>
-  </tr>
-</table>
-</form>
-</div>
-
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+<p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+text-justify:inter-ideograph;line-height:115%'><span lang=EN-US
+style='font-size:5.0pt;mso-bidi-font-size:12.0pt;line-height:115%;font-family:
+"Cambria","serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
-line-height:115%;tab-stops:63.0pt'><span class=SpellE><?php echo"$izin_kuliah. ";?><span
-class=SpellE>Untuk</span> <span class=SpellE>itu</span>, kami <span
-class=SpellE>berharap</span> <span class=SpellE>kepada</span> <span
-class=SpellE>Bapak</span>/<span class=SpellE>Ibu</span> <span class=SpellE>untuk</span>
-<span class=SpellE>dapat</span> <span class=SpellE>memberikan</span> <span
-class=SpellE>izin</span> <span class=SpellE>kepada</span> <span class=SpellE>mahasiswa</span>
-yang <span class=SpellE>bersangkutan</span> <span class=SpellE>untuk</span> <span
-class=SpellE>tidak</span> <span class=SpellE>mengikuti</span> <span
-class=SpellE>perkuliahan.<b
-style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+tab-stops:35.45pt'><span lang=EN-US>Maka dimohon kesediaan Bapak untuk dapat memberikan
+Bantuan Dana bagi Himpunan Mahasiswa Jurusan Sistem Informasi sebesar Rp. <?php echo"$dana_bantuan";?>,-
+sesuai dengan RKAKL Jurusan Sistem Informasi tahun <?php echo"$tgl_tahun";?>.</span></p>
 
 <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
-line-height:115%;tab-stops:63.0pt'><span class=SpellE><span lang=EN-US>Atas</span></span><span
-lang=EN-US> <span class=SpellE>perhatian</span> <span class=SpellE>dan</span> <span
-class=SpellE>bantuan</span> <span class=SpellE>Bapak</span>/<span class=SpellE>Ibu</span>
-<span class=SpellE>diucapkan</span> <span class=SpellE>terima</span> <span
-class=SpellE>kasih</span>.</span></p>
+tab-stops:35.45pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span lang=EN-US><span
-style='mso-tab-count:2'>                        </span><span
-style='mso-spacerun:yes'>  </span></span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+tab-stops:35.45pt'><span lang=EN-US>Demikianlah disampaikan, atas perhatian dan
+kerjasamanya diucapkan terima kasih.</span></p>
 
-<p class=MsoNormal style='margin-left:242.1pt;line-height:115%;tab-stops:3.0cm'><span
-class=GramE><span lang=EN-US>Ketua,</span></span></p>
+<p class=MsoNormal style='tab-stops:35.45pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
 
-<br>
-<br>
-<br>
-<p class=MsoNormal style='margin-left:242.1pt;line-height:115%;tab-stops:3.0cm'><span
-class=SpellE><u><span lang=EN-US>Darwison</span></u></span><u><span lang=EN-US>,
-MT<o:p></o:p></span></u></p>
+<p class=MsoNormal style='tab-stops:35.45pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='margin-left:242.1pt;line-height:115%;tab-stops:3.0cm'><span
-class=GramE><b style='mso-bidi-font-weight:normal'><span lang=EN-US>NIP :</span></b></span><b
-style='mso-bidi-font-weight:normal'><span lang=EN-US> 196409141995121001<o:p></o:p></span></b></p>
+<p class=MsoNormal style='margin-left:225.0pt;line-height:150%'><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_s1026" type="#_x0000_t75"
+ style='position:absolute;left:0;text-align:left;margin-left:210pt;
+ margin-top:9.9pt;width:73.5pt;height:74.45pt;z-index:251658240;visibility:visible;
+ mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
+ mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:page;mso-height-relative:page'>
+ <v:imagedata src="PERMOHONAN%20BANTUAN%20DANA%20HIMPUNAN_files/image001.png"
+  o:title="ttd pak darwison"/>
+</v:shape><span lang=EN-US>Ketua, </span></p>
 
-<p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span
-class=SpellE><i style='mso-bidi-font-style:normal'><span lang=EN-US
-style='font-size:10.0pt;mso-bidi-font-size:12.0pt;line-height:115%'>Tembusan</span></i></span><i
-style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:10.0pt;
-mso-bidi-font-size:12.0pt;line-height:115%'>:<o:p></o:p></span></i></p>
+<p class=MsoNormal style='margin-left:225.0pt;line-height:150%'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoListParagraph style='text-indent:-18.0pt;line-height:115%;
-mso-list:l1 level1 lfo2;tab-stops:63.0pt'><![if !supportLists]><i
-style='mso-bidi-font-style:normal'><span lang=EN-US style='font-size:10.0pt;
-mso-bidi-font-size:12.0pt;line-height:115%;mso-fareast-font-family:Cambria;
-mso-fareast-theme-font:minor-latin;mso-bidi-font-family:Cambria;mso-bidi-theme-font:
-minor-latin'><span style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span></i><![endif]><span class=SpellE><i style='mso-bidi-font-style:
-normal'><span lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
-line-height:115%'>Arsip</span></i></span><i style='mso-bidi-font-style:normal'><span
-lang=EN-US style='font-size:10.0pt;mso-bidi-font-size:12.0pt;line-height:115%'><o:p></o:p></span></i></p>
+<p class=MsoNormal style='margin-left:225.0pt;line-height:150%'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:225.0pt;line-height:150%'><span
+lang=EN-US><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:225.0pt'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US>Darwison, MT<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='tab-stops:18.0pt 36.0pt 54.0pt 72.0pt 90.0pt 108.0pt 126.0pt 144.0pt 162.0pt 180.0pt 198.0pt 216.0pt 234.0pt 252.0pt 270.0pt 288.0pt 306.0pt 324.0pt 342.0pt 360.0pt 378.0pt 396.0pt 414.0pt 432.0pt 450.0pt 468.0pt 486.0pt 504.0pt 522.0pt 540.0pt 558.0pt 576.0pt;
+mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US><span style='mso-tab-count:12'>                                                                        </span><span
+style='mso-spacerun:yes'>   </span>NIP : </span></b><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US style='mso-bidi-font-family:Arial;background:white'>196409141955121001</span></b><b
+style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:11.0pt;
+mso-bidi-font-family:"Segoe Print"'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='tab-stops:18.0pt 36.0pt 54.0pt 72.0pt 90.0pt 108.0pt 126.0pt 144.0pt 162.0pt 180.0pt 198.0pt 216.0pt 234.0pt 252.0pt 270.0pt 288.0pt 306.0pt 324.0pt 342.0pt 360.0pt 378.0pt 396.0pt 414.0pt 432.0pt 450.0pt 468.0pt 486.0pt 504.0pt 522.0pt 540.0pt 558.0pt 576.0pt;
+mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-US><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
+line-height:150%;tab-stops:1.0cm'><span lang=EN-US>Tembusan : </span></p>
+
+<p class=MsoListParagraph style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt;line-height:150%;mso-list:l2 level1 lfo3;tab-stops:1.0cm'><![if !supportLists]><span
+lang=EN-US style='mso-fareast-font-family:Cambria;mso-fareast-theme-font:minor-latin;
+mso-bidi-font-family:Cambria;mso-bidi-theme-font:minor-latin'><span
+style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'> </span></span></span><![endif]><span
+lang=EN-US>Arsip</span></p>
 
 </div>
 </div>
-
-</body >
+</body>
 
 </html>

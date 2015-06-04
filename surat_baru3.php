@@ -1637,15 +1637,155 @@ table.MsoTableGrid
 </table>
 </head>
 
-<body lang=IN link=blue vlink=purple style='tab-interval:36.0pt'>
+<body lang=IN link=blue vlink=purple style='tab-interval:36.0pt' onload="window.print()">
 <div id="mar">
 <div class=WordSection1>
+<?php
+error_reporting(0);	
+	include "config.php";
+	
+if(isset($_GET['surat']))
+	{	
+	$id_surat=$_GET['surat'];
+	$no=0;
+	$hidden="hidden='hidden'";
+	$hidden2="hidden='hidden'";
+	$query = "SELECT * FROM surat left join surat_orang on surat.id_surat=surat_orang.id_surat left join jenis_surat on surat.id_jenis_surat=jenis_surat.id_jenis_surat where surat.id_surat = '$id_surat'";
+$update = mysql_query($query);
+while ($data = mysql_fetch_assoc($update))
+{
+$no++;
+ $no_surat = $data['no_surat']; 
+ $tanggal_surat_dibuat = $data['tanggal_surat_dibuat'];
+ $tanggal_mulai = $data['tanggal_mulai'];
+ $tanggal_selesai = $data['tanggal_selesai'];
+ $alamat_surat = $data['alamat_surat'];
+ $tempat = $data['tempat'];
+ $waktu = $data['waktu'];
+ $dana_bantuan = $data['dana_bantuan'];
+ $jumlah_peserta = $data['jumlah_peserta'];
+ $izin_matkul = $data['izin_matkul'];
+ $izin_kuliah = $data['izin_kuliah'];
+ $keperluan_ambil_data = $data['keperluan_ambil_data'];
+ $hari = $data['hari'];
+ $keperluan = $data['keperluan'];
+ $nim = $data['nim'];
+ $id_jenis_surat = $data['id_jenis_surat'];
+ $nama=$data['nama'];
+ $no;
+ 
+ 
 
+ 
+ $tgl_tgl=(int)substr($tanggal_surat_dibuat,8,2);
+ $tgl_bulan=(int)substr($tanggal_surat_dibuat,5,2);
+ $tgl_tahun=(int)substr($tanggal_surat_dibuat,0,4);
+ 
+ if($tgl_bulan==01)
+ {
+ $tgl_bulan="Januari";
+ }
+ else
+ {
+ if($tgl_bulan==02)
+	{
+	$tgl_bulan="Februari";
+	}
+	else
+	{ 
+	if($tgl_bulan==02)
+	{
+	$tgl_bulan="Februari";
+	}
+	else
+	{
+		if($tgl_bulan==03)
+		{
+		$tgl_bulan="Maret";
+		}
+	else
+	{
+		if($tgl_bulan==04)
+			{
+			$tgl_bulan="April";
+			}
+			
+	else
+	{
+				if($tgl_bulan==05)
+				{
+				$tgl_bulan="Mei";
+				}
+	else
+	{
+					if($tgl_bulan==06)
+					{
+					$tgl_bulan="Juni";
+					}
+	else
+	{
+					if($tgl_bulan==07)
+					{
+					$tgl_bulan="Juli";
+					}
+	else
+	{				if($tgl_bulan==08)
+					{
+					$tgl_bulan="Agustus";
+					}	
+	else
+	{
+					if($tgl_bulan==09)
+					{
+					$tgl_bulan="September";
+					}
+	else
+	{
+					if($tgl_bulan==10)
+					{
+					$tgl_bulan="Oktober";
+					}
+	else
+	{	
+					if($tgl_bulan==11)
+					{
+					$tgl_bulan="November";
+					}
+	else
+	{
+					if($tgl_bulan==12)
+					{
+					$tgl_bulan="Desember";
+					}
+					
+ 
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+if($no>1)
+ {
+ $hidden="";
+ }
+ else
+ {
+ $hidden2="";
+ }
+	}
+?>
 <p class=MsoNormal style='tab-stops:63.0pt 304.8pt'><span lang=EN-US>Nomor<span
-style='mso-tab-count:1'>         </span>: <span style='background:yellow;
-mso-highlight:yellow'>27</span>/UN.16.15.5.2/PP/2015<span style='mso-tab-count:
+style='mso-tab-count:1'>         </span>: <?php echo"$no_surat";?><span style='mso-tab-count:
 2'>                 </span>Padang, <span
-style='mso-spacerun:yes'> </span>21 Januari 2015 </span></p>
+style='mso-spacerun:yes'> </span><?php echo"$tgl_tgl $tgl_bulan $tgl_tahun";?></span></p>
 
 <p class=MsoNormal style='tab-stops:63.0pt'><span lang=EN-US>Lampiran<span
 style='mso-tab-count:1'>    </span>: -</span></p>
@@ -1658,8 +1798,7 @@ normal'><u>Permohonan Izin Pengambilan Data Tugas Akhir<o:p></o:p></u></b></span
 
 <p class=MsoNormal style='tab-stops:63.0pt'><span lang=EN-US>Kepada,</span></p>
 
-<p class=MsoNormal style='tab-stops:63.0pt'><span lang=EN-US>Ketua Pengadilan
-Tata Usaha Negara Padang</span></p>
+<p class=MsoNormal style='tab-stops:63.0pt'><span lang=EN-US>Yth. <?php echo"$alamat_surat";?></span></p>
 
 <p class=MsoNormal style='tab-stops:63.0pt'><span lang=EN-US>Di </span></p>
 
@@ -1683,15 +1822,106 @@ berikut :</span></p>
 <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
 tab-stops:35.45pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
-tab-stops:35.45pt'><span lang=EN-US><span style='mso-tab-count:3'>                        </span>Nama<span
-style='mso-tab-count:1'>  </span><span style='mso-tab-count:1'>            </span>:
-Hadiyatul Husna</span></p>
+<div align=center>
 
-<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
-tab-stops:35.45pt'><span lang=EN-US><span style='mso-tab-count:3'>                        </span>NIM<span
-style='mso-tab-count:1'>     </span><span style='mso-tab-count:1'>            </span>:
-1010962023</span></p>
+<table <?php echo"$hidden";?> class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt' >
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:12.55pt'>
+  <td width=53 valign=top style='width:39.95pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.55pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
+  tab-stops:63.0pt'><b style='mso-bidi-font-weight:normal'><span lang=EN-US>No<o:p></o:p></span></b></p>
+  </td>
+  <td width=264 valign=top style='width:198.3pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.55pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
+  tab-stops:63.0pt'><span class=SpellE><b style='mso-bidi-font-weight:normal'><span
+  lang=EN-US>Nama</span></b></span><b style='mso-bidi-font-weight:normal'><span
+  lang=EN-US><o:p></o:p></span></b></p>
+  </td>
+  <td width=213 valign=top style='width:159.4pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.55pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
+  tab-stops:63.0pt'><b style='mso-bidi-font-weight:normal'><span lang=EN-US>NIM<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <?php
+ $no=0;
+ $result=  mysql_query("SELECT * FROM surat left join surat_orang on surat.id_surat=surat_orang.id_surat left join jenis_surat on surat.id_jenis_surat=jenis_surat.id_jenis_surat where surat.id_surat = '$id_surat' ORDER BY nim ASC");
+									while($baris = mysql_fetch_assoc($result))
+									{
+									$nomor++;
+									$nama="$baris[nama]";
+									$nim="$baris[nim]";
+										echo "
+										<tbody>
+											 <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:13.25pt'>
+  <td width=53 valign=top style='width:39.95pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
+  tab-stops:63.0pt'><span lang=EN-US>$nomor</span></p>
+  </td>
+  <td width=264 valign=top style='width:198.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
+  <p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span
+  lang=EN-US>$baris[nama]</span></p>
+  </td>
+  <td width=213 valign=top style='width:159.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
+  tab-stops:63.0pt'><span lang=EN-US>$baris[nim]</span></p>
+  </td>
+ </tr>
+										<tbody>";
+									}
+
+								mysql_close();
+ ?>
+ 
+ 
+ 
+
+</table>
+
+<form <?php echo"$hidden2";?> >
+<table >
+<tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:13.25pt'>
+  <td width=53 valign=top style='width:39.95pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.1pt;height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
+  tab-stops:63.0pt'><span lang=EN-US>NIM</span></p>
+  </td>
+  <td width=264 valign=top style='width:198.3pt;border-top:none;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
+  <p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span
+  lang=EN-US>: <?php echo"$nim";?></span></p>
+  </td>
+  </tr>
+  <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes;height:13.25pt'>
+  <td width=53 valign=top style='width:39.95pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:115%;
+  tab-stops:63.0pt'><span lang=EN-US>Nama</span></p>
+  </td>
+  <td width=264 valign=top style='width:198.3pt;border-top:none;border-left:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:13.25pt'>
+  <p class=MsoNormal style='line-height:115%;tab-stops:63.0pt'><span
+  lang=EN-US>: <?php echo"$nama";?></span></p>
+  </td>
+  </tr>
+</table>
+</form>
+</div>
 
 <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;
 tab-stops:35.45pt'><span lang=EN-US><o:p>&nbsp;</o:p></span></p>

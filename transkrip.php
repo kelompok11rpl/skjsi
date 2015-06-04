@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Beranda</title>
+    <title>Surat</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@
 <body>
 <?php
 	session_start(); // memulai session 
-
+//error_reporting(0);
 	include "config.php";
 	if($_SESSION['level']=='usr02')
 	{		 
@@ -79,12 +79,12 @@
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                  <ul class="nav navbar-nav side-nav">
+                <ul class="nav navbar-nav side-nav">
                     <li class="dropdown">
-					<li class="active">
+					<li>
                         <a href="beranda_user.php"><i class="fa fa-fw fa-home"></i> Beranda</a>
                     </li>
-                        <li >
+                        <li  class="active">
 							<a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-envelope"></i> Surat <i class="fa fa-fw fa-caret-down"></i></a>
 							<ul id="demo" class="collapse">
 								<li>
@@ -109,6 +109,7 @@
 						</li>
                         <li>
                         <a href="user_kotak_masuk.php"><i class="fa fa-fw fa-folder-open"></i> Kotak masuk</a>
+
 						</li>
                         
 					</li>
@@ -125,14 +126,140 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Beranda
+                            Transkrip
                         </h1>
-                        <ol class="breadcrumb">
-                            <li class="active">
-                                <i class="fa fa-home"></i> Beranda
+                         <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-home"></i>  <a href="beranda_user.php">Beranda</a>
+                            </li>                            
+							<li class="active">
+                                <i class="fa fa-Plus"></i> Surat
                             </li>
                         </ol>
                     </div>
+							<div class="container-fluid">		
+			
+					<form method="post" action="transkrip.php" >
+					<h4>Masukkan NIM dan Nama mahasiswa </h4>
+				<div class="row">
+				<div class="col-md-4 col-md-offset-4">				
+                <div class="form-group">
+                    <label>NIM</label>
+                    <input type="text" class="form-control span12" name="nim" id="nim"  >
+                </div>
+				<div class="form-group">
+                    <label>Nama</label>
+                    <input type="text" class="form-control span12" name="nama" id="nama" >
+                </div>
+               
+								
+                <div class="form-group">
+                     <input type="submit" class="btn btn-primary pull-right" value="Kirim" />
+                </div>
+                    <div class="clearfix"></div>
+  </div>
+</div>
+				 
+            </form>
+			
+			<?php
+			
+			date_default_timezone_get('Asia/Jakarta');
+						$tahun=date("Y");
+						$tanggal_minta = date('Ymd');
+							$query = "SELECT max(no_surat) as maxID FROM surat";
+							$penomoran = mysql_query($query);
+							while ($data = mysql_fetch_assoc($penomoran))
+							{
+							 $no_surat = $data['maxID'];							 	
+							}
+							//echo "$no_surat";
+							
+							if($no_surat)
+							{
+							$nourut=(int)substr($no_surat,0,3);
+							$nourut++;
+							$baru='/UN16.15.5.2/PP/';
+							$newid=sprintf("%03s", $nourut).$baru.$tahun;
+							//echo "$newid";
+							}
+							else
+							{
+							
+								$baru='/UN16.15.5.2/PP/';
+								$no='001';
+								$newid=$no.$baru.$tahun;
+								//echo"$newid";
+							}
+							
+							$query2 = "SELECT max(id_surat) as maxID2 FROM surat";
+							$penomoran2 = mysql_query($query2);
+							while ($data2 = mysql_fetch_assoc($penomoran2))
+							{
+							 $id_surat = $data2['maxID2'];							 	
+							}
+							//echo "$id_surat";
+							
+							if($id_surat)
+							{
+							$nourut2=(int)substr($id_surat,14,3);
+							$nourut2++;
+							$baru2='SK-';
+							$jenis='-srt01-';
+							$newid2=$baru2.$tahun.$jenis.sprintf("%03s", $nourut2);
+							//echo "$newid2";
+							}
+							else
+							{
+							
+								$baru2='SK-';
+								$no2='001';
+								$jenis='-srt01-';
+								$newid2=$baru2.$tahun.$jenis.$no;
+								//echo"$newid2";
+							}
+			$query3 = "SELECT max(id_surat_orang) as maxID3 FROM surat_orang";
+							$penomoran3 = mysql_query($query3);
+							while ($data3 = mysql_fetch_assoc($penomoran3))
+							{
+							 $id_surat_orang = $data3['maxID3'];							 	
+							}
+							//echo "$no_surat";
+							
+							if($id_surat_orang)
+							{
+							$id_surat_orang=(int)substr($id_surat_orang,11,3);
+							$id_surat_orang++;
+							$baru3='MHS-srt-01-';
+							$newid3=$baru3.sprintf("%03s", $id_surat_orang);
+							//echo "$newid";
+							}
+							else
+							{
+								$baru3='MHS-srt-01-';	
+								$no3='001';
+								$newid3=$baru3.$no3;
+								//echo"$newid";
+							}
+			
+			if(isset($_POST["nim"]))
+	{	
+	$nim=$_POST["nim"];
+	$nama=$_POST["nama"];
+		$result= mysql_query("insert into surat (id_surat,id_jenis_surat,id_user,no_surat,tanggal_surat_dibuat,disetujui,download) VALUES ('$newid2','srt06','$_SESSION[id_user]','$newid','$tanggal_minta','0','0')");	
+		$result2= mysql_query("insert into surat_orang (id_surat_orang,id_surat,nim,nama) VALUES ('$newid3','$newid2','$nim','$nama')");	
+	if($result2>0)
+{?>
+<script type="text/javascript">alert('Permintaan berhasil');
+window.location = 'beranda_user.php';</script>
+<?php
+}
+	}
+
+		mysql_close();
+			?>		
+			
+			
                 </div>
             
             </div>
