@@ -163,8 +163,11 @@
 												else
 												{
 												echo"
-												<td>
-												<a href='surat_proses2.php?lihat=$baris[id_surat]'><button type='submit' class='btn btn-primary'>Lihat</button></a>
+												<td>												
+												";
+												?>
+												<button type='submit' class='btn btn-primary' onclick="window.open('surat_proses2.php?lihat=<?php echo"$baris[id_surat]"; ?>')">Lihat</button>
+												<?php echo"
 												<a href='permintaan.php?setuju=$baris[no_surat]'><button type='submit' class='btn btn-success'>Setuju</button></a>
 												<a href='permintaan.php?tolak=$baris[no_surat]'><button type='submit' class='btn btn-danger'>Tolak</button></a>
 												 </td>";

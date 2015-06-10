@@ -149,10 +149,25 @@
 												<td><center>$baris[jenis]</center></td>
 												<td><center>$baris[no_surat]</center></td>
 												<td><center>$baris[tanggal_surat_dibuat]</center></td>	
-												<td>
-												<a href='pengguna_ubah.php?ubah=$baris[id_user]'><button type='submit' class='btn btn-primary'>Lihat</button></a>
-												 </td>
+												<td>";
+												if($baris[id_jenis_surat]=='srt06')
+												{
+												echo "<td>
+												</td>";
 												
+												}
+												else
+												{
+												echo"
+												<td>";										
+																								
+												?>
+												<button type='submit' class='btn btn-primary' onclick="window.open('surat_proses2.php?lihat=<?php echo"$baris[id_surat]"; ?>')">Lihat</button>
+												<?php  echo"
+												
+												 </td>";
+												 }
+												echo"
 											</tr>
 										<tbody>";
 									}

@@ -15,14 +15,14 @@
 
 <div class="navbar navbar-static-top">
 	<div class="navbar-inner">
-		<a class="brand">Login</a>
+		<a class="brand">Login - Layanan Surat Keluar Jurusan Sistem Informasi</a>
 	</div>
 </div>
 <div class="row">
 	<div class="dialog">
 		
 		<div class="block">
-		<div><center><h3>SI Surat Keluar</h3></center></div>
+		<div><center><h3>Login</h3></center></div>
 		<form name="frm-login" method="post" action="autentifikasi.php">
 			<div class="input-prepend">
 				<span class="add-on"><i class="icon-user"></i></span>

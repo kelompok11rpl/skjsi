@@ -133,8 +133,8 @@
 											$cek_tolak=mysql_query("select count(*) as cek_tolak from surat where disetujui='2' and id_user='$_SESSION[id_user]'");  
 												while ($data3 = mysql_fetch_assoc($cek_tolak))
 											{
-											$cek_tolak=$data['cek_tolak'];
-											if($cek_tolak==null)
+											$cek_tolak=$data3['cek_tolak'];
+											if($cek_tolak==0)
 											{
 											$cek_tolak=0;
 											}

@@ -107,22 +107,31 @@ error_reporting(0);
 												while ($data = mysql_fetch_assoc($cek_permintaan))
 											{
 											$cek_permintaan=$data['cek_permintaan'];
+											if($cek_permintaan==0)
+											{
+											$cek_permintaan=0;
+											}
 											}
 												
 												$cek_setuju=mysql_query("select count(*) as cek_setuju from surat where disetujui='1'");  
 												while ($data2 = mysql_fetch_assoc($cek_setuju))
 											{
 											$cek_setuju=$data2['cek_setuju'];
+												if($cek_setuju==0)
+											{
+											$cek_setuju=0;
+											}
 											}
 											
 											$cek_tolak=mysql_query("select count(*) as cek_tolak from surat where disetujui='2'");  
 												while ($data3 = mysql_fetch_assoc($cek_tolak))
 											{
-											$cek_tolak=$data['cek_tolak'];
-											if($cek_tolak==null)
+											$cek_tolak=$data3['cek_tolak'];
+											
+											}
+											if($cek_tolak==0)
 											{
 											$cek_tolak=0;
-											}
 											}
 											?>
 

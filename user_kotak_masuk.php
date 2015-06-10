@@ -175,8 +175,10 @@
 												else
 												{
 												echo"
-												<td>
-												<a href='surat_proses2.php?lihat=$baris[id_surat]'><button type='submit' class='btn btn-primary'>Download</button></a>
+												<td>";
+												?>
+												<button type='submit' class='btn btn-primary' onclick="window.open('surat_proses2.php?lihat=<?php echo"$baris[id_surat]"; ?>')">Cetak</button>
+												<?php echo"
 												 </td>";
 												}
 												echo"
